@@ -1,0 +1,52 @@
+{
+    "stats": {
+        "people": 50,
+        "army": 50,
+        "money": 50
+    },
+    "questions": [
+        "The people want the streets to be cleaned. Should we have them cleaned?",
+        "The King of Noderdale has declared war on us. Should we attack?"
+    ],
+    "context": [
+        "Sorry I am late. I am Gustavo, your advisor. Let me explain what you shall be doing. People will come to you asking for permission or to do something. You will answer with Y or N. depending on how you answer it will affect your stats; people, army, and money. Good luck.",
+        "Your next of kin has taken over and you can now rest peacefully."
+    ],
+    "endings": [
+        "The people have decapitated you for not caring for them.",
+        "You where overthrown and executed as a result from an army coup as you did not care for the army.",
+        "You where exiled as result from a sovereign default."
+    ],
+    "result Y": [
+        "Alright, I would bet the people would be happy.",
+        "I shall prepare the army."
+    ],
+    "result data Y": [
+        {
+            "people": 10,
+            "army": 0,
+            "money": -5
+        },
+        {
+            "people": -5,
+            "army": -5,
+            "money": 5
+        }
+    ],
+    "result N": [
+        "Ok, saving money is a good idea.",
+        "Alright, we will reinforce the city."
+    ],
+    "result data N": [
+        {
+            "people": -10,
+            "army": 0,
+            "money": 5
+        },
+        {
+            "people": 0,
+            "army": 5,
+            "money": 0
+        }
+    ]
+}
